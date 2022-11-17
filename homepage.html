@@ -3,15 +3,15 @@
 	<head>
 		<title>Website</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+		<link href="assets/css/main.css" rel="stylesheet" />
+		<noscript><link href="assets/css/noscript.css" rel="stylesheet" /></noscript>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
+				<header class="alt" id="header">
 					<h1 id="logo"><a href="homepage.html">Koen van Dijk</a></h1>
 					<nav id="nav">
 						<ul>
@@ -37,7 +37,7 @@
 						<p>Dit is de website van Koen van Dijk</p>
 						<footer>
 							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">Lees verder</a></li>
+								<li><a class="button fit scrolly" href="#main">Lees verder</a></li>
 							</ul>
 						</footer>
 					</div>
@@ -45,7 +45,7 @@
 
 			<!-- Main -->
 				<article id="main">
-
+					<!-- About me -->
 					<header class="special container">
 						<h2>Mijn naam is Koen van Dijk
 						<br/>
@@ -80,14 +80,15 @@
 										<br>
 										1566 XK Assendelft
 									</p>
-									<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-									<link rel="stylesheet" type="text/css" href="./main.css" />
-									<script type="module" src="./main.js"></script>
+									<!-- Google maps location -->
+									<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+									<link href="./main.css" rel="stylesheet" type="text/css" />
+									<script src="./main.js" type="module"></script>
 									<h2><strong>Mijn Locatie:</strong></h2>
 									<div id="map"></div>
+									<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"></script>
 
-									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
 									<header>
 										<h2><strong>Opleidingen:</strong></h2>
 									</header>
@@ -101,6 +102,7 @@
 										<br>
 										- Profiel: Economie & Maatschappij
 									</p>
+
 									<header>
 										<h2><strong>Ervaringen:</strong></h2>
 									</header>
@@ -118,21 +120,23 @@
 							<header class="major">
 								<h2>Mijn Projecten</h2>
 							</header>
+
+							<!-- Project 1 -->
 							<div class="row">
 								<div class="col-6 col-12-narrower">
-
 									<section>
-										<a class="image featured"><img src="images/drone.jpg" alt="" /></a>
+										<a class="image featured"><img alt="" src="images/drone.jpg" /></a>
 										<header>
 											<h3>Drone Project</h3>
 										</header>
 										<p>Dit was mijn eerste project, hierbij moesten we een vliegplan coderen in python voor 5 drones. Het was de bedoeling dat ze scynchroon gingen vliegen.</p>
 									</section>
 								</div>
-								<div class="col-6 col-12-narrower">
 
+								<!-- Project 2 -->
+								<div class="col-6 col-12-narrower">
 									<section>
-										<a  class="image featured"><img src="images/clowns" alt="" /></a>
+										<a  class="image featured"><img alt="" src="images/clowns" /></a>
 										<header>
 											<h3>VR Game Project</h3>
 										</header>
@@ -140,21 +144,23 @@
 									</section>
 								</div>
 							</div>
+
+							<!-- My game -->
 							<div class="row">
 								<div class="col-6 col-12-narrower">
-
 									<section>
-										<a class="image featured"><img src="images/frog1.png" alt="" /></a>
+										<a class="image featured"><img alt="" src="images/frog1.png" /></a>
 										<header>
 											<h3>Mijn Zelfgemaakte Game Frog Fighters</h3>
 										</header>
 										<p>Voor deze game heb ik alle assets zelf gemaakt (dat is ook te zien), de game is een 2D platformer waarbij je speelt als een kikker en aanvallende wezens neerschiet.</p>
 									</section>
 								</div>
-								<div class="col-6 col-12-narrower">
 
+								<!-- Stage project -->
+								<div class="col-6 col-12-narrower">
 									<section>
-										<a class="image featured"><img src="images/questionmark" alt="" /></a>
+										<a class="image featured"><img alt="" src="images/questionmark" /></a>
 										<header>
 											<h3>Stage Project</h3>
 										</header>
@@ -166,21 +172,19 @@
 
 							<footer class="major">
 								<ul class="buttons">
-									<li><a href="game.html" class="button">Lees meer over mijn game</a></li>
+									<li><a class="button" href="game.html">Lees meer over mijn game</a></li>
 								</ul>
 							</footer>
-
 						</section>
-
 				</article>
 
 			<!-- Footer -->
 				<footer id="footer">
 
 					<ul class="icons">
-						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/KoenvDijk/project3website" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a class="icon brands circle fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+						<li><a class="icon brands circle fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+						<li><a class="icon brands circle fa-github" href="https://github.com/KoenvDijk/project3website"><span class="label">Github</span></a></li>
 					</ul>
 
 					<ul class="copyright">
